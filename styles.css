@@ -1343,37 +1343,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     height: 32px !important;
   }
   
-  /* Make header navigation fit on one line */
-  .top-nav {
-    gap: 16px !important;
-    font-size: 0.9rem !important;
-    white-space: nowrap !important;
-  }
-  
-  .top-nav a {
-    padding: 8px 12px !important;
-    font-size: 0.9rem !important;
-  }
-  
-  /* Make footer navigation fit on one line */
-  .main-footer {
-    height: 80px !important;
-    padding: 0 20px !important;
-    font-size: 0.9rem !important;
-    justify-content: center !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-    gap: 16px !important;
-  }
-  
-  .main-footer a {
-    font-size: 0.9rem !important;
-    white-space: nowrap !important;
-    padding: 4px 8px !important;
-  }
-  
-  /* Reset and fix hero section - force left alignment like image */
+  /* Reset and fix hero section - match Larva Labs left alignment */
   .hero-flex {
     padding: 40px 20px 20px 20px !important;
     gap: 32px !important;
@@ -1383,7 +1353,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
-    margin: 0 auto !important;
+    margin: 0 !important;
     display: flex !important;
     justify-content: flex-start !important;
   }
@@ -1446,6 +1416,34 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     margin: 0 !important;
   }
   
+  /* Fix footer alignment */
+  .main-footer {
+    height: 80px !important;
+    padding: 0 20px !important;
+    font-size: 1rem !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin-top: auto !important;
+    flex-shrink: 0 !important;
+  }
+  
+  .main-footer nav {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 24px !important;
+  }
+  
+  .main-footer a {
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+  
   /* About page fixes */
   .about-section {
     max-width: 100% !important;
@@ -1453,6 +1451,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     padding: 20px 20px 0 20px !important;
     width: 100% !important;
     box-sizing: border-box !important;
+    text-align: left !important;
   }
   
   .about-section h2 {
@@ -1461,6 +1460,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100% !important;
     max-width: 100% !important;
     word-wrap: break-word !important;
+    text-align: left !important;
   }
   
   .about-section p {
@@ -1469,6 +1469,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100% !important;
     max-width: 100% !important;
     word-wrap: break-word !important;
+    text-align: left !important;
   }
   
   /* Projects page fixes */
@@ -1489,6 +1490,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     padding: 24px !important;
     min-height: 250px !important;
     box-sizing: border-box !important;
+    text-align: left !important;
   }
   
   .project-card h2 {
@@ -1497,6 +1499,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100% !important;
     max-width: 100% !important;
     word-wrap: break-word !important;
+    text-align: left !important;
   }
   
   .project-card p {
@@ -1505,11 +1508,13 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100% !important;
     max-width: 100% !important;
     word-wrap: break-word !important;
+    text-align: left !important;
   }
   
   .project-card .access-button {
     padding: 10px 20px !important;
     font-size: 0.95rem !important;
     white-space: nowrap !important;
+    align-self: flex-start !important;
   }
 }
