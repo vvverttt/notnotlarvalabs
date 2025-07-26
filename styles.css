@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: auto; /* Allow some horizontal scrolling to see white sides */
+  overflow-y: auto; /* Allow vertical scrolling */
   width: 100%;
   max-width: 100vw;
 }
@@ -13,7 +14,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: auto; /* Allow some horizontal scrolling to see white sides */
+  overflow-y: auto; /* Allow vertical scrolling */
   width: 100%;
   max-width: 100vw;
 }
@@ -22,7 +24,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: auto; /* Allow some horizontal scrolling to see white sides */
+  overflow-y: visible; /* Allow vertical scrolling */
   box-sizing: border-box;
 }
 .header-bar {
@@ -565,7 +568,8 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100%;
     max-width: 100vw;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: auto; /* Allow some horizontal scrolling to see white sides */
+    overflow-y: visible; /* Allow vertical scrolling */
   }
   
   header {
@@ -577,6 +581,8 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+    overflow-x: auto; /* Allow some horizontal scrolling to see white sides */
+    overflow-y: visible; /* Allow vertical scrolling */
   }
   
   .logo {
@@ -685,7 +691,8 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     min-height: 300px;
     width: 100%;
     max-width: 100vw;
-    overflow-x: hidden;
+    overflow-x: auto; /* Allow some horizontal scrolling to see white sides */
+    overflow-y: visible; /* Allow vertical scrolling */
   }
   
   .project-hero-content {
@@ -748,6 +755,8 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100%;
     max-width: 100vw;
     box-sizing: border-box;
+    overflow-x: auto; /* Allow some horizontal scrolling to see white sides */
+    overflow-y: visible; /* Allow vertical scrolling */
   }
   
   .main-footer nav {
@@ -784,7 +793,8 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100%;
     max-width: 100vw;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: auto; /* Allow some horizontal scrolling to see white sides */
+    overflow-y: visible; /* Allow vertical scrolling */
   }
   
   header {
@@ -793,6 +803,8 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+    overflow-x: auto; /* Allow some horizontal scrolling to see white sides */
+    overflow-y: visible; /* Allow vertical scrolling */
   }
   
   .logo {
@@ -869,7 +881,8 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     min-height: 260px;
     width: 100%;
     max-width: 100vw;
-    overflow-x: hidden;
+    overflow-x: auto; /* Allow some horizontal scrolling to see white sides */
+    overflow-y: visible; /* Allow vertical scrolling */
   }
   
   .project-hero-content {
@@ -912,6 +925,8 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100%;
     max-width: 100vw;
     box-sizing: border-box;
+    overflow-x: auto; /* Allow some horizontal scrolling to see white sides */
+    overflow-y: visible; /* Allow vertical scrolling */
   }
   
   .main-footer nav {
