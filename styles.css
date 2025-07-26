@@ -1200,9 +1200,9 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   }
 }
 
-/* iPhone-specific fixes - higher specificity */
+/* iPhone-specific fixes - prevent overlapping */
 @media (max-width: 768px) {
-  /* Force proper centering for iPhone */
+  /* Force proper centering for iPhone without overlapping */
   .hero-flex {
     padding: 40px 20px 20px 20px !important;
     gap: 32px !important;
@@ -1214,6 +1214,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     box-sizing: border-box !important;
     margin: 0 auto !important;
     justify-content: flex-start !important;
+    min-height: auto !important;
   }
   
   .hero-text {
@@ -1227,6 +1228,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     padding: 0 !important;
     display: flex !important;
     flex-direction: column !important;
+    min-height: auto !important;
   }
   
   .hero-text h1 {
@@ -1260,6 +1262,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     justify-content: center !important;
     display: flex !important;
     align-items: center !important;
+    min-height: auto !important;
   }
   
   .characters img {
@@ -1269,7 +1272,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     height: auto !important;
   }
   
-  /* Force footer visibility on all pages */
+  /* Fix layout to prevent overlapping */
   body {
     min-height: 100vh !important;
     display: flex !important;
@@ -1283,6 +1286,8 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     display: flex !important;
     flex-direction: column !important;
     min-height: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
   
   main {
@@ -1311,9 +1316,10 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     overflow-y: visible !important;
     position: relative !important;
     z-index: 10 !important;
+    margin-top: auto !important;
   }
   
-  /* About page specific fixes */
+  /* About page specific fixes - prevent overlapping */
   .about-section {
     max-width: 100% !important;
     margin: 40px auto 0 auto !important;
@@ -1321,6 +1327,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100% !important;
     box-sizing: border-box !important;
     flex: 1 !important;
+    min-height: auto !important;
   }
   
   .about-section h2 {
@@ -1339,7 +1346,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     word-wrap: break-word !important;
   }
   
-  /* Projects page specific fixes */
+  /* Projects page specific fixes - prevent overlapping */
   .projects-grid {
     display: grid !important;
     grid-template-columns: 1fr !important;
@@ -1350,6 +1357,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100% !important;
     box-sizing: border-box !important;
     flex: 1 !important;
+    min-height: auto !important;
   }
   
   .project-card {
@@ -1383,7 +1391,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   }
 }
 
-/* Small mobile devices - About and Projects pages */
+/* Small mobile devices - About and Projects pages - prevent overlapping */
 @media (max-width: 480px) {
   .about-section {
     max-width: 100% !important;
@@ -1392,6 +1400,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100% !important;
     box-sizing: border-box !important;
     flex: 1 !important;
+    min-height: auto !important;
   }
   
   .about-section h2 {
@@ -1415,6 +1424,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100% !important;
     max-width: 100% !important;
     flex: 1 !important;
+    min-height: auto !important;
   }
   
   main img {
@@ -1434,6 +1444,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100% !important;
     box-sizing: border-box !important;
     flex: 1 !important;
+    min-height: auto !important;
   }
   
   .project-card {
@@ -1466,7 +1477,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     white-space: nowrap !important;
   }
   
-  /* Ensure footer is always visible */
+  /* Ensure footer is always visible without overlapping */
   .main-footer {
     flex-shrink: 0 !important;
     height: 70px !important;
@@ -1479,5 +1490,6 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     overflow-y: visible !important;
     position: relative !important;
     z-index: 10 !important;
+    margin-top: auto !important;
   }
 }
