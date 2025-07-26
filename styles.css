@@ -1321,6 +1321,21 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
 
 /* Clean iPhone fix - simple and effective */
 @media (max-width: 768px) {
+  /* Hide DystoLabz text on iPhone, show only atomic symbol */
+  .logo {
+    font-size: 0 !important;
+    margin-right: 0 !important;
+    gap: 0 !important;
+    justify-content: center !important;
+    max-width: 100% !important;
+  }
+  
+  .logo svg {
+    font-size: 1.2rem !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
   /* Reset and fix hero section */
   .hero-flex {
     padding: 40px 20px 20px 20px !important;
@@ -1333,6 +1348,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     box-sizing: border-box !important;
     margin: 0 auto !important;
     display: flex !important;
+    justify-content: center !important;
   }
   
   .hero-text {
@@ -1341,7 +1357,10 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     text-align: center !important;
     box-sizing: border-box !important;
     padding: 0 !important;
-    margin: 0 !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
   
   .hero-text h1 {
@@ -1351,6 +1370,8 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100% !important;
     max-width: 100% !important;
     word-wrap: break-word !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   
   .hero-text p {
@@ -1361,6 +1382,13 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     max-width: 100% !important;
     word-wrap: break-word !important;
     box-sizing: border-box !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .hero-text button {
+    margin: 0 auto !important;
+    text-align: center !important;
   }
   
   .characters {
@@ -1369,6 +1397,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    margin: 0 auto !important;
   }
   
   .characters img {
@@ -1376,6 +1405,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100% !important;
     box-sizing: border-box !important;
     height: auto !important;
+    margin: 0 auto !important;
   }
   
   /* Fix footer visibility */
