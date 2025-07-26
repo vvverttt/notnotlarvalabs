@@ -544,35 +544,41 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   }
 }
 
-/* Mobile Responsiveness - Add at the end of the file */
+/* Mobile Responsiveness - Larva Labs Style */
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
   .header-bar {
     min-height: 80px;
     padding-top: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   header {
     height: 80px;
-    padding: 0 16px;
-    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
   }
   
   .logo {
-    font-size: 1.1rem !important;
-    margin-right: 0;
-    gap: 6px;
+    font-size: 1.2rem !important;
+    margin-right: 0 !important;
+    gap: 8px;
+    justify-content: center;
   }
   
   nav.top-nav {
-    flex-wrap: wrap;
-    gap: 16px;
+    gap: 24px;
+    justify-content: center;
   }
   
   nav.top-nav a {
-    font-size: 0.9rem;
-    margin-left: 16px;
+    font-size: 1rem;
+    margin-left: 0;
+    font-weight: 600;
   }
   
   nav.top-nav a.projects,
@@ -586,108 +592,149 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     font-size: 1.1rem;
   }
   
-  /* Hero section mobile */
+  /* Hero section - Larva Labs style */
   .hero-flex {
-    padding: 24px 16px 16px 16px;
-    gap: 16px;
+    padding: 40px 20px 20px 20px;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   
   .hero-text {
     margin-left: 0;
     min-width: 0;
     width: 100%;
+    align-items: center;
+    text-align: center;
   }
   
   .hero-text h1 {
-    font-size: 2rem;
-    margin-bottom: 12px;
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+    text-align: center;
+    line-height: 1.2;
   }
   
   .hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-text button {
+    padding: 16px 32px;
     font-size: 1rem;
-    margin-bottom: 20px;
+    border-radius: 24px;
+    font-weight: 600;
+  }
+  
+  .characters {
+    display: flex;
+    justify-content: center;
   }
   
   .characters img {
-    max-width: 180px;
+    max-width: 280px;
+    height: auto;
   }
   
   /* Project hero mobile */
   .project-hero {
-    min-height: 280px;
+    min-height: 300px;
   }
   
   .project-hero-content {
-    padding: 20px 16px 16px 16px;
+    padding: 24px 20px 20px 20px;
     max-width: 100%;
+    text-align: center;
+    align-items: center;
   }
   
   .project-hero-content h2 {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
+    font-size: 2rem;
+    margin-bottom: 16px;
   }
   
   .project-hero-content p {
-    font-size: 0.95rem;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    margin-bottom: 24px;
     max-width: 100%;
+    line-height: 1.5;
   }
   
   .project-hero-content .read-more {
-    padding: 12px 24px;
-    font-size: 0.9rem;
+    padding: 14px 28px;
+    font-size: 0.95rem;
+    border-radius: 24px;
   }
   
   /* Projects grid mobile */
   .projects-grid {
-    padding: 0 16px 32px 16px;
-    gap: 24px;
+    padding: 0 20px 40px 20px;
+    gap: 32px;
   }
   
   .project-card {
     width: 100%;
-    min-height: 400px;
+    min-height: 450px;
     height: auto;
+    border-radius: 12px;
   }
   
   /* Footer mobile */
   .main-footer {
     height: 80px;
-    padding: 0 16px;
+    padding: 0 20px;
     font-size: 1rem;
+    justify-content: center;
+  }
+  
+  .main-footer nav {
+    gap: 24px;
   }
   
   /* General text adjustments */
   h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 16px;
   }
   
   p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
   }
 }
 
-/* Small mobile devices */
+/* Small mobile devices - iPhone style */
 @media (max-width: 480px) {
   .header-bar {
     min-height: 70px;
     padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   
   header {
     height: 70px;
-    padding: 0 12px;
+    gap: 6px;
   }
   
   .logo {
-    font-size: 1rem !important;
-    gap: 4px;
+    font-size: 1.1rem !important;
+    gap: 6px;
+  }
+  
+  nav.top-nav {
+    gap: 20px;
   }
   
   nav.top-nav a {
-    font-size: 0.85rem;
-    margin-left: 12px;
+    font-size: 0.95rem;
   }
   
   nav.top-nav a.twitter {
@@ -696,7 +743,110 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   }
   
   .hero-flex {
-    padding: 20px 12px 12px 12px;
+    padding: 32px 16px 16px 16px;
+    gap: 24px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+  
+  .hero-text p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+  
+  .hero-text button {
+    padding: 14px 28px;
+    font-size: 0.95rem;
+  }
+  
+  .characters img {
+    max-width: 240px;
+  }
+  
+  .project-hero {
+    min-height: 260px;
+  }
+  
+  .project-hero-content {
+    padding: 20px 16px 16px 16px;
+  }
+  
+  .project-hero-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .project-hero-content p {
+    font-size: 0.95rem;
+  }
+  
+  .project-hero-content .read-more {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+  
+  .projects-grid {
+    padding: 0 16px 32px 16px;
+    gap: 24px;
+  }
+  
+  .main-footer {
+    height: 70px;
+    padding: 0 16px;
+    font-size: 0.95rem;
+  }
+  
+  .main-footer nav {
+    gap: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .header-bar {
+    min-height: 60px;
+    padding-top: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+  header {
+    height: 60px;
+    gap: 4px;
+  }
+  
+  .logo {
+    font-size: 1rem !important;
+    gap: 4px;
+  }
+  
+  nav.top-nav {
+    gap: 16px;
+  }
+  
+  nav.top-nav a {
+    font-size: 0.9rem;
+  }
+  
+  nav.top-nav a.twitter {
+    margin-left: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .hero-flex {
+    padding: 24px 12px 12px 12px;
+    gap: 20px;
   }
   
   .hero-text h1 {
@@ -705,14 +855,20 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   
   .hero-text p {
     font-size: 0.95rem;
+    max-width: 350px;
+  }
+  
+  .hero-text button {
+    padding: 12px 24px;
+    font-size: 0.9rem;
   }
   
   .characters img {
-    max-width: 160px;
+    max-width: 200px;
   }
   
   .project-hero {
-    min-height: 240px;
+    min-height: 220px;
   }
   
   .project-hero-content {
@@ -738,9 +894,13 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   }
   
   .main-footer {
-    height: 70px;
+    height: 60px;
     padding: 0 12px;
     font-size: 0.9rem;
+  }
+  
+  .main-footer nav {
+    gap: 16px;
   }
   
   h1 {
@@ -749,89 +909,6 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   
   p {
     font-size: 0.95rem;
-  }
-}
-
-/* Extra small devices */
-@media (max-width: 360px) {
-  .header-bar {
-    min-height: 60px;
-    padding-top: 8px;
-  }
-  
-  header {
-    height: 60px;
-    padding: 0 8px;
-  }
-  
-  .logo {
-    font-size: 0.9rem !important;
-  }
-  
-  nav.top-nav a {
-    font-size: 0.8rem;
-    margin-left: 8px;
-  }
-  
-  nav.top-nav a.twitter {
-    margin-left: 8px;
-    font-size: 0.9rem;
-  }
-  
-  .hero-flex {
-    padding: 16px 8px 8px 8px;
-  }
-  
-  .hero-text h1 {
-    font-size: 1.6rem;
-  }
-  
-  .hero-text p {
-    font-size: 0.9rem;
-  }
-  
-  .characters img {
-    max-width: 140px;
-  }
-  
-  .project-hero {
-    min-height: 200px;
-  }
-  
-  .project-hero-content {
-    padding: 12px 8px 8px 8px;
-  }
-  
-  .project-hero-content h2 {
-    font-size: 1.4rem;
-  }
-  
-  .project-hero-content p {
-    font-size: 0.85rem;
-  }
-  
-  .project-hero-content .read-more {
-    padding: 8px 16px;
-    font-size: 0.8rem;
-  }
-  
-  .projects-grid {
-    padding: 0 8px 20px 8px;
-    gap: 16px;
-  }
-  
-  .main-footer {
-    height: 60px;
-    padding: 0 8px;
-    font-size: 0.85rem;
-  }
-  
-  h1 {
-    font-size: 1.6rem;
-  }
-  
-  p {
-    font-size: 0.9rem;
   }
 }
 
@@ -844,21 +921,32 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   
   header {
     height: 60px;
+    flex-direction: row;
+    gap: 16px;
   }
   
   .hero-flex {
     padding: 16px 16px 8px 16px;
-    gap: 12px;
+    gap: 16px;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .hero-text {
+    text-align: left;
+    align-items: flex-start;
   }
   
   .hero-text h1 {
     font-size: 1.6rem;
     margin-bottom: 8px;
+    text-align: left;
   }
   
   .hero-text p {
     font-size: 0.9rem;
     margin-bottom: 12px;
+    text-align: left;
   }
   
   .characters img {
