@@ -1,7 +1,5 @@
 html, body {
   height: 100%;
-  overflow-x: auto; /* Allow some horizontal scrolling to see white sides */
-  overflow-y: auto; /* Allow vertical scrolling */
   width: 100%;
   max-width: 100vw;
 }
@@ -14,8 +12,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-x: auto; /* Allow some horizontal scrolling to see white sides */
-  overflow-y: auto; /* Allow vertical scrolling */
   width: 100%;
   max-width: 100vw;
 }
@@ -24,8 +20,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  overflow-x: auto; /* Allow some horizontal scrolling to see white sides */
-  overflow-y: visible; /* Allow vertical scrolling */
   box-sizing: border-box;
 }
 .header-bar {
