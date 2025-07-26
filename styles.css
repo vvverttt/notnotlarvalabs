@@ -1200,8 +1200,9 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   }
 }
 
-/* Fix index page centering for iPhone */
+/* iPhone-specific fixes - higher specificity */
 @media (max-width: 768px) {
+  /* Force proper centering for iPhone */
   .hero-flex {
     padding: 40px 20px 20px 20px !important;
     gap: 32px !important;
@@ -1212,6 +1213,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     max-width: 100% !important;
     box-sizing: border-box !important;
     margin: 0 auto !important;
+    justify-content: flex-start !important;
   }
   
   .hero-text {
@@ -1223,6 +1225,8 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     text-align: center !important;
     box-sizing: border-box !important;
     padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
   
   .hero-text h1 {
@@ -1255,6 +1259,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     max-width: 100% !important;
     justify-content: center !important;
     display: flex !important;
+    align-items: center !important;
   }
   
   .characters img {
@@ -1262,6 +1267,119 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100% !important;
     box-sizing: border-box !important;
     height: auto !important;
+  }
+  
+  /* Force footer visibility on all pages */
+  body {
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+  
+  .main-container {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 0 !important;
+  }
+  
+  main {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding-top: 20px !important;
+    margin-bottom: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
+  }
+  
+  .main-footer {
+    flex-shrink: 0 !important;
+    height: 80px !important;
+    padding: 0 20px !important;
+    font-size: 1rem !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    position: relative !important;
+    z-index: 10 !important;
+  }
+  
+  /* About page specific fixes */
+  .about-section {
+    max-width: 100% !important;
+    margin: 40px auto 0 auto !important;
+    padding: 20px 20px 0 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    flex: 1 !important;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem !important;
+    margin-bottom: 20px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+  }
+  
+  .about-section p {
+    font-size: 1rem !important;
+    margin-bottom: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+  }
+  
+  /* Projects page specific fixes */
+  .projects-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 20px 40px 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    flex: 1 !important;
+  }
+  
+  .project-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 24px !important;
+    min-height: 250px !important;
+    box-sizing: border-box !important;
+  }
+  
+  .project-card h2 {
+    font-size: 2rem !important;
+    margin-bottom: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+  }
+  
+  .project-card p {
+    font-size: 1rem !important;
+    margin-bottom: 24px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+  }
+  
+  .project-card .access-button {
+    padding: 10px 20px !important;
+    font-size: 0.95rem !important;
+    white-space: nowrap !important;
   }
 }
 
@@ -1271,30 +1389,32 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     max-width: 100% !important;
     margin: 32px auto 0 auto !important;
     padding: 16px 16px 0 16px !important;
-    width: 100%;
-    box-sizing: border-box;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    flex: 1 !important;
   }
   
   .about-section h2 {
     font-size: 1.8rem !important;
     margin-bottom: 16px !important;
-    width: 100%;
-    max-width: 100%;
-    word-wrap: break-word;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
   }
   
   .about-section p {
     font-size: 0.95rem !important;
     margin-bottom: 14px !important;
-    width: 100%;
-    max-width: 100%;
-    word-wrap: break-word;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
   }
   
   main {
-    padding-top: 16px;
-    width: 100%;
-    max-width: 100%;
+    padding-top: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 1 !important;
   }
   
   main img {
@@ -1311,8 +1431,9 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     max-width: 100% !important;
     margin: 0 auto !important;
     padding: 0 16px 32px 16px !important;
-    width: 100%;
-    box-sizing: border-box;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    flex: 1 !important;
   }
   
   .project-card {
@@ -1320,28 +1441,43 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     max-width: 100% !important;
     padding: 20px !important;
     min-height: 220px !important;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
   }
   
   .project-card h2 {
     font-size: 1.8rem !important;
     margin-bottom: 14px !important;
-    width: 100%;
-    max-width: 100%;
-    word-wrap: break-word;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
   }
   
   .project-card p {
     font-size: 0.95rem !important;
     margin-bottom: 20px !important;
-    width: 100%;
-    max-width: 100%;
-    word-wrap: break-word;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
   }
   
   .project-card .access-button {
     padding: 8px 16px !important;
     font-size: 0.9rem !important;
-    white-space: nowrap;
+    white-space: nowrap !important;
+  }
+  
+  /* Ensure footer is always visible */
+  .main-footer {
+    flex-shrink: 0 !important;
+    height: 70px !important;
+    padding: 0 16px !important;
+    font-size: 0.95rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    position: relative !important;
+    z-index: 10 !important;
   }
 }
