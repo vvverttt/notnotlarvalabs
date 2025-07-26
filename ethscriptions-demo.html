@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethscriptions Gallery - DystoLabz</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .ethscriptions-gallery {
+            padding: 40px;
+            background: #fff;
+        }
+        
+        .gallery-section {
+            margin-bottom: 60px;
+        }
+        
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .gallery-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .gallery-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .load-button {
+            background: linear-gradient(135deg, #ff00a0, #2d9cff);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+        
+        .load-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        
+        .load-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .images-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            min-height: 200px;
+            padding: 20px;
+            border: 2px dashed #ddd;
+            border-radius: 12px;
+            background: #fafafa;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .error {
+            text-align: center;
+            padding: 40px;
+            color: #e74c3c;
+            font-size: 1.1rem;
+        }
+        
+        .no-images {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .ethscription-image-wrapper {
+            transition: transform 0.3s ease;
+        }
+        
+        .ethscription-image-wrapper:hover {
+            transform: scale(1.05);
+        }
+        
+        .creator-input {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            margin: 10px;
+        }
+        
+        .creator-input:focus {
+            outline: none;
+            border-color: #2d9cff;
+        }
+        
+        .controls {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+    <div class="main-container" style="max-width: 1200px; margin: 0 auto; width: 100%;">
+        <div class="header-bar" style="padding-left: 40px; padding-right: 40px;">
+            <header style="max-width: 1200px; margin: 0 auto; width: 100%; display: flex; justify-content: space-between; align-items: center;">
+                <a href="index.html" class="logo" style="margin-right: 64px; margin-left: 0;">
+                    <svg width="32" height="32" viewBox="0 0 32 32" style="vertical-align: middle;">
+                        <!-- Orbits -->
+                        <ellipse cx="16" cy="16" rx="12" ry="4" fill="none" stroke="#ff00a0" stroke-width="2"/>
+                        <ellipse cx="16" cy="16" rx="4" ry="12" fill="none" stroke="#2d9cff" stroke-width="2" transform="rotate(45 16 16)"/>
+                        <ellipse cx="16" cy="16" rx="4" ry="12" fill="none" stroke="#ffb300" stroke-width="2" transform="rotate(-45 16 16)"/>
+                        <!-- Electrons -->
+                        <circle cx="28" cy="16" r="2" fill="#ff00a0"/>
+                        <circle cx="16" cy="28" r="2" fill="#2d9cff"/>
+                        <circle cx="4" cy="16" r="2" fill="#ffb300"/>
+                        <!-- Nucleus -->
+                        <circle cx="16" cy="16" r="3" fill="#7ed957"/>
+                    </svg>
+                    DystoLabz
+                </a>
+                <nav class="top-nav" style="gap: 32px; margin-right: 0;">
+                    <a href="projects.html" class="projects" style="margin: 0 24px 0 0;">Projects</a>
+                    <a href="writing.html" class="writing" style="margin: 0 24px 0 0;">Writing</a>
+                    <a href="about.html" class="about" style="margin: 0 24px 0 0;">About</a>
+                    <a href="https://twitter.com/dystolabz" class="twitter" aria-label="Twitter" style="margin-left: 0;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;">
+                            <path d="M22.46 5.924c-.793.352-1.645.59-2.54.698a4.48 4.48 0 0 0 1.965-2.475 8.94 8.94 0 0 1-2.828 1.082 4.48 4.48 0 0 0-7.635 4.086A12.72 12.72 0 0 1 3.112 4.89a4.48 4.48 0 0 0 1.387 5.976 4.47 4.47 0 0 1-2.03-.561v.057a4.48 4.48 0 0 0 3.593 4.393 4.48 4.48 0 0 1-2.025.077 4.48 4.48 0 0 0 4.184 3.112A8.98 8.98 0 0 1 2 19.54a12.67 12.67 0 0 0 6.88 2.017c8.26 0 12.78-6.84 12.78-12.78 0-.195-.004-.39-.013-.583A9.14 9.14 0 0 0 24 4.59a8.93 8.93 0 0 1-2.54.698z"/>
+                        </svg>
+                    </a>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <div class="ethscriptions-gallery">
+        <div class="gallery-header">
+            <h1>Ethscriptions Gallery</h1>
+            <p>Load and display images from the Ethscriptions API v2. Enter creator addresses to load their ethscriptions.</p>
+        </div>
+
+        <!-- Missing Phunks Section -->
+        <div class="gallery-section">
+            <div class="gallery-header">
+                <h2>Missing Phunks</h2>
+                <p>Load Missing Phunks ethscriptions by creator address</p>
+            </div>
+            
+            <div class="controls">
+                <input type="text" id="missing-phunks-creator" class="creator-input" 
+                       placeholder="Enter creator address (e.g., 0x...)" 
+                       value="0x0000000000000000000000000000000000000000">
+                <button onclick="loadMissingPhunksCustom()" class="load-button">Load Missing Phunks</button>
+            </div>
+            
+            <div id="missing-phunks-container" class="images-container">
+                <div class="loading">Click "Load Missing Phunks" to start loading images from Ethscriptions API</div>
+            </div>
+        </div>
+
+        <!-- DystoPhunks Section -->
+        <div class="gallery-section">
+            <div class="gallery-header">
+                <h2>DystoPhunks</h2>
+                <p>Load DystoPhunks ethscriptions by creator address</p>
+            </div>
+            
+            <div class="controls">
+                <input type="text" id="dystophunks-creator" class="creator-input" 
+                       placeholder="Enter creator address (e.g., 0x...)" 
+                       value="0x0000000000000000000000000000000000000000">
+                <button onclick="loadDystoPhunksCustom()" class="load-button">Load DystoPhunks</button>
+            </div>
+            
+            <div id="dystophunks-container" class="images-container">
+                <div class="loading">Click "Load DystoPhunks" to start loading images from Ethscriptions API</div>
+            </div>
+        </div>
+
+        <!-- Custom Search Section -->
+        <div class="gallery-section">
+            <div class="gallery-header">
+                <h2>Custom Search</h2>
+                <p>Search for any ethscriptions by creator address</p>
+            </div>
+            
+            <div class="controls">
+                <input type="text" id="custom-creator" class="creator-input" 
+                       placeholder="Enter any creator address (e.g., 0x...)" 
+                       value="">
+                <button onclick="loadCustomEthscriptions()" class="load-button">Load Ethscriptions</button>
+            </div>
+            
+            <div id="custom-container" class="images-container">
+                <div class="loading">Enter a creator address and click "Load Ethscriptions" to start</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #fff; width: 100%;">
+        <footer class="main-footer">
+            <nav>
+                <a href="projects.html">Projects</a>
+                <a href="writing.html">Writing</a>
+                <a href="about.html">About</a>
+                <a href="https://twitter.com/yourhandle" class="twitter" aria-label="Twitter">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;">
+                        <path d="M22.46 5.924c-.793.352-1.645.59-2.54.698a4.48 4.48 0 0 0 1.965-2.475 8.94 8.94 0 0 1-2.828 1.082 4.48 4.48 0 0 0-7.635 4.086A12.72 12.72 0 0 1 3.112 4.89a4.48 4.48 0 0 0 1.387 5.976 4.47 4.47 0 0 1-2.03-.561v.057a4.48 4.48 0 0 0 3.593 4.393 4.48 4.48 0 0 1-2.025.077 4.48 4.48 0 0 0 4.184 3.112A8.98 8.98 0 0 1 2 19.54a12.67 12.67 0 0 0 6.88 2.017c8.26 0 12.78-6.84 12.78-12.78 0-.195-.004-.39-.013-.583A9.14 9.14 0 0 0 24 4.59a8.93 8.93 0 0 1-2.54.698z"/>
+                    </svg>
+                </a>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="ethscriptions-loader.js"></script>
+    <script>
+        // Custom functions for the demo page
+        function loadMissingPhunksCustom() {
+            const creatorAddress = document.getElementById('missing-phunks-creator').value;
+            if (!creatorAddress || creatorAddress === '0x0000000000000000000000000000000000000000') {
+                alert('Please enter a valid creator address for Missing Phunks');
+                return;
+            }
+            ethscriptionsLoader.loadImagesToContainer('missing-phunks-container', creatorAddress, 'missing-phunks');
+        }
+
+        function loadDystoPhunksCustom() {
+            const creatorAddress = document.getElementById('dystophunks-creator').value;
+            if (!creatorAddress || creatorAddress === '0x0000000000000000000000000000000000000000') {
+                alert('Please enter a valid creator address for DystoPhunks');
+                return;
+            }
+            ethscriptionsLoader.loadImagesToContainer('dystophunks-container', creatorAddress, 'dystophunks');
+        }
+
+        function loadCustomEthscriptions() {
+            const creatorAddress = document.getElementById('custom-creator').value;
+            if (!creatorAddress) {
+                alert('Please enter a creator address');
+                return;
+            }
+            ethscriptionsLoader.loadImagesToContainer('custom-container', creatorAddress, 'all');
+        }
+
+        // Add enter key support for inputs
+        document.getElementById('missing-phunks-creator').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') loadMissingPhunksCustom();
+        });
+
+        document.getElementById('dystophunks-creator').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') loadDystoPhunksCustom();
+        });
+
+        document.getElementById('custom-creator').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') loadCustomEthscriptions();
+        });
+    </script>
+</body>
+</html> 
