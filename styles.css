@@ -1101,3 +1101,247 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     font-size: 0.8rem;
   }
 }
+
+/* Mobile styles for About page */
+@media (max-width: 768px) {
+  .about-section {
+    max-width: 100% !important;
+    margin: 40px auto 0 auto !important;
+    padding: 20px 20px 0 20px !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem !important;
+    margin-bottom: 20px !important;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  
+  .about-section p {
+    font-size: 1rem !important;
+    margin-bottom: 16px !important;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  
+  /* Ensure footer is visible */
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* About page image */
+  main img {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto;
+    margin: 32px 0 16px 0 !important;
+  }
+}
+
+/* Mobile styles for Projects page */
+@media (max-width: 768px) {
+  .projects-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 20px 40px 20px !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .project-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 24px !important;
+    min-height: 250px !important;
+    box-sizing: border-box;
+  }
+  
+  .project-card h2 {
+    font-size: 2rem !important;
+    margin-bottom: 16px !important;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  
+  .project-card p {
+    font-size: 1rem !important;
+    margin-bottom: 24px !important;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  
+  .project-card .access-button {
+    padding: 10px 20px !important;
+    font-size: 0.95rem !important;
+    white-space: nowrap;
+  }
+}
+
+/* Fix index page centering for iPhone */
+@media (max-width: 768px) {
+  .hero-flex {
+    padding: 40px 20px 20px 20px !important;
+    gap: 32px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 auto !important;
+  }
+  
+  .hero-text {
+    margin-left: 0 !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    padding: 0 !important;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.2rem !important;
+    margin-bottom: 16px !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .hero-text p {
+    font-size: 1.1rem !important;
+    margin-bottom: 24px !important;
+    text-align: center !important;
+    line-height: 1.5 !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    word-wrap: break-word !important;
+    box-sizing: border-box !important;
+  }
+  
+  .characters {
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: center !important;
+    display: flex !important;
+  }
+  
+  .characters img {
+    max-width: 280px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    height: auto !important;
+  }
+}
+
+/* Small mobile devices - About and Projects pages */
+@media (max-width: 480px) {
+  .about-section {
+    max-width: 100% !important;
+    margin: 32px auto 0 auto !important;
+    padding: 16px 16px 0 16px !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .about-section h2 {
+    font-size: 1.8rem !important;
+    margin-bottom: 16px !important;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  
+  .about-section p {
+    font-size: 0.95rem !important;
+    margin-bottom: 14px !important;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  
+  main {
+    padding-top: 16px;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  main img {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto;
+    margin: 24px 0 12px 0 !important;
+  }
+  
+  .projects-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 16px 32px 16px !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .project-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px !important;
+    min-height: 220px !important;
+    box-sizing: border-box;
+  }
+  
+  .project-card h2 {
+    font-size: 1.8rem !important;
+    margin-bottom: 14px !important;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  
+  .project-card p {
+    font-size: 0.95rem !important;
+    margin-bottom: 20px !important;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  
+  .project-card .access-button {
+    padding: 8px 16px !important;
+    font-size: 0.9rem !important;
+    white-space: nowrap;
+  }
+}
