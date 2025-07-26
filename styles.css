@@ -1343,6 +1343,36 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     height: 32px !important;
   }
   
+  /* Make header navigation fit on one line */
+  .top-nav {
+    gap: 16px !important;
+    font-size: 0.9rem !important;
+    white-space: nowrap !important;
+  }
+  
+  .top-nav a {
+    padding: 8px 12px !important;
+    font-size: 0.9rem !important;
+  }
+  
+  /* Make footer navigation fit on one line */
+  .main-footer {
+    height: 80px !important;
+    padding: 0 20px !important;
+    font-size: 0.9rem !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    gap: 16px !important;
+  }
+  
+  .main-footer a {
+    font-size: 0.9rem !important;
+    white-space: nowrap !important;
+    padding: 4px 8px !important;
+  }
+  
   /* Reset and fix hero section - force left alignment like image */
   .hero-flex {
     padding: 40px 20px 20px 20px !important;
@@ -1414,17 +1444,6 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     box-sizing: border-box !important;
     height: auto !important;
     margin: 0 !important;
-  }
-  
-  /* Fix footer visibility */
-  .main-footer {
-    height: 80px !important;
-    padding: 0 20px !important;
-    font-size: 1rem !important;
-    justify-content: center !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
   }
   
   /* About page fixes */
