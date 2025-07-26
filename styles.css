@@ -1319,9 +1319,9 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   }
 }
 
-/* iPhone-specific fixes - prevent overlapping and fix alignment */
+/* Clean iPhone fix - simple and effective */
 @media (max-width: 768px) {
-  /* Fix hero section layout to prevent overlapping */
+  /* Reset and fix hero section */
   .hero-flex {
     padding: 40px 20px 20px 20px !important;
     gap: 32px !important;
@@ -1332,47 +1332,33 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     max-width: 100% !important;
     box-sizing: border-box !important;
     margin: 0 auto !important;
-    justify-content: flex-start !important;
-    min-height: auto !important;
     display: flex !important;
   }
   
   .hero-text {
-    margin-left: 0 !important;
-    min-width: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
-    align-items: center !important;
     text-align: center !important;
     box-sizing: border-box !important;
     padding: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    min-height: auto !important;
-    order: 1 !important;
+    margin: 0 !important;
   }
   
   .hero-text h1 {
     font-size: 2.2rem !important;
     margin-bottom: 16px !important;
     text-align: center !important;
-    line-height: 1.2 !important;
     width: 100% !important;
     max-width: 100% !important;
     word-wrap: break-word !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
   
   .hero-text p {
     font-size: 1.1rem !important;
     margin-bottom: 24px !important;
     text-align: center !important;
-    line-height: 1.5 !important;
-    max-width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
     width: 100% !important;
+    max-width: 100% !important;
     word-wrap: break-word !important;
     box-sizing: border-box !important;
   }
@@ -1380,11 +1366,9 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   .characters {
     width: 100% !important;
     max-width: 100% !important;
-    justify-content: center !important;
     display: flex !important;
+    justify-content: center !important;
     align-items: center !important;
-    min-height: auto !important;
-    order: 2 !important;
   }
   
   .characters img {
@@ -1394,39 +1378,8 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     height: auto !important;
   }
   
-  /* Fix layout to prevent overlapping */
-  body {
-    min-height: 100vh !important;
-    display: flex !important;
-    flex-direction: column !important;
-    overflow-x: hidden !important;
-    overflow-y: auto !important;
-  }
-  
-  .main-container {
-    flex: 1 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    min-height: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-  
-  main {
-    flex: 1 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-start !important;
-    align-items: center !important;
-    padding-top: 20px !important;
-    margin-bottom: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    min-height: 0 !important;
-  }
-  
+  /* Fix footer visibility */
   .main-footer {
-    flex-shrink: 0 !important;
     height: 80px !important;
     padding: 0 20px !important;
     font-size: 1rem !important;
@@ -1434,22 +1387,15 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
-    overflow-x: hidden !important;
-    overflow-y: visible !important;
-    position: relative !important;
-    z-index: 10 !important;
-    margin-top: auto !important;
   }
   
-  /* About page specific fixes - prevent overlapping */
+  /* About page fixes */
   .about-section {
     max-width: 100% !important;
     margin: 40px auto 0 auto !important;
     padding: 20px 20px 0 20px !important;
     width: 100% !important;
     box-sizing: border-box !important;
-    flex: 1 !important;
-    min-height: auto !important;
   }
   
   .about-section h2 {
@@ -1468,7 +1414,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     word-wrap: break-word !important;
   }
   
-  /* Projects page specific fixes - prevent overlapping */
+  /* Projects page fixes */
   .projects-grid {
     display: grid !important;
     grid-template-columns: 1fr !important;
@@ -1478,8 +1424,6 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     padding: 0 20px 40px 20px !important;
     width: 100% !important;
     box-sizing: border-box !important;
-    flex: 1 !important;
-    min-height: auto !important;
   }
   
   .project-card {
