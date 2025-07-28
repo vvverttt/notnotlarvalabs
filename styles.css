@@ -1555,3 +1555,128 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     align-self: flex-start !important;
   }
 }
+
+/* iPad/Tablet specific fixes */
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* Index page - move text more inside */
+  .hero-flex {
+    padding: 40px 40px 20px 40px !important;
+    gap: 32px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+  }
+  
+  .hero-text {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+    padding: 0 20px !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.2rem !important;
+    margin-bottom: 16px !important;
+    text-align: left !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  .hero-text p {
+    font-size: 1.1rem !important;
+    margin-bottom: 24px !important;
+    text-align: left !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+    box-sizing: border-box !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  .hero-text button {
+    margin: 0 !important;
+    text-align: left !important;
+    align-self: flex-start !important;
+  }
+  
+  .characters {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    margin: 0 !important;
+    padding: 0 20px !important;
+  }
+  
+  .characters img {
+    max-width: 280px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+  
+  /* Projects page - center the cards */
+  .projects-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+    padding: 0 40px 40px 40px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    justify-items: center !important;
+  }
+  
+  .project-card {
+    width: 100% !important;
+    max-width: 500px !important;
+    padding: 24px !important;
+    min-height: 250px !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+    margin: 0 auto !important;
+  }
+  
+  .project-card h2 {
+    font-size: 2rem !important;
+    margin-bottom: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+    text-align: left !important;
+  }
+  
+  .project-card p {
+    font-size: 1rem !important;
+    margin-bottom: 24px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+    text-align: left !important;
+  }
+  
+  .project-card .access-button {
+    padding: 10px 20px !important;
+    font-size: 0.95rem !important;
+    white-space: nowrap !important;
+    align-self: flex-start !important;
+  }
+}
