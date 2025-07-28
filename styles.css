@@ -1509,7 +1509,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     text-align: left !important;
   }
   
-  /* Projects page fixes */
+  /* Projects page fixes - center cards properly */
   .projects-grid {
     display: grid !important;
     grid-template-columns: 1fr !important;
@@ -1519,6 +1519,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     padding: 0 20px 40px 20px !important;
     width: 100% !important;
     box-sizing: border-box !important;
+    justify-items: center !important;
   }
   
   .project-card {
@@ -1528,6 +1529,8 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     min-height: 250px !important;
     box-sizing: border-box !important;
     text-align: left !important;
+    margin: 0 !important;
+    overflow: hidden !important;
   }
   
   .project-card h2 {
