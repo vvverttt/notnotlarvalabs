@@ -1557,6 +1557,16 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     white-space: nowrap !important;
     align-self: flex-start !important;
   }
+  
+  /* Center the Projects title */
+  main h1 {
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto 40px auto !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+  }
 }
 
 /* iPad/Tablet specific fixes */
