@@ -1500,7 +1500,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     color: black !important;
     border: 2px solid black !important;
     padding: 12px 24px !important;
-    border-radius: 8px !important;
+    border-radius: 50px !important; /* Make circular */
     font-weight: 600 !important;
     font-size: 1.1rem !important;
   }
@@ -1514,7 +1514,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     align-items: center !important;
     max-width: 100% !important;
     display: flex !important;
-    margin-left: 0 !important;
+    margin-left: -20px !important; /* Move further left */
     margin-right: auto !important;
   }
   
