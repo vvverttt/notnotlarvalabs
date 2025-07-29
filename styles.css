@@ -1344,16 +1344,70 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     font-size: 0 !important;
     margin-right: 0 !important;
     gap: 0 !important;
-    justify-content: flex-start !important;
+    justify-content: center !important;
     align-items: center !important;
     max-width: 100% !important;
     display: flex !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   
   .logo svg {
     font-size: 1.2rem !important;
     width: 32px !important;
     height: 32px !important;
+  }
+  
+  .characters {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    margin: 0 !important;
+  }
+  
+  .characters img {
+    max-width: 280px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+  
+  /* Fix footer alignment */
+  .main-footer {
+    height: 80px !important;
+    padding: 0 20px !important;
+    font-size: 0.9rem !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin-top: auto !important;
+    flex-shrink: 0 !important;
+    display: flex !important;
+    position: relative !important;
+    z-index: 10 !important;
+  }
+  
+  .main-footer nav {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 16px !important;
+  }
+  
+  .main-footer a {
+    text-align: center !important;
+    white-space: nowrap !important;
+    padding: 4px 8px !important;
+    font-size: 0.9rem !important;
+    color: black !important;
+    text-decoration: none !important;
   }
   
   /* Hide Twitter bird on iPhone */
@@ -1418,6 +1472,8 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     word-wrap: break-word !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   
   .hero-text p {
@@ -1430,64 +1486,61 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     box-sizing: border-box !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   
   .hero-text button {
     margin: 0 !important;
     text-align: left !important;
     align-self: flex-start !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   
-  .characters {
-    width: 100% !important;
-    max-width: 100% !important;
-    display: flex !important;
-    justify-content: flex-start !important;
-    align-items: flex-start !important;
-    margin: 0 !important;
-  }
-  
-  .characters img {
-    max-width: 280px !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-    height: auto !important;
-    margin: 0 !important;
-  }
-  
-  /* Fix footer alignment */
-  .main-footer {
-    height: 80px !important;
-    padding: 0 20px !important;
-    font-size: 0.9rem !important;
+  /* Fix DystoLabz header alignment on iPhone */
+  .logo {
+    font-size: 0 !important;
+    margin-right: 0 !important;
+    gap: 0 !important;
     justify-content: center !important;
     align-items: center !important;
-    width: 100% !important;
     max-width: 100% !important;
-    box-sizing: border-box !important;
-    margin-top: auto !important;
-    flex-shrink: 0 !important;
     display: flex !important;
-    position: relative !important;
-    z-index: 10 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   
-  .main-footer nav {
+  .logo svg {
+    font-size: 1.2rem !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  /* Hide Twitter bird on iPhone */
+  .twitter-link {
+    display: none !important;
+  }
+  
+  /* Hide Twitter bird in footer on iPhone */
+  .main-footer .twitter {
+    display: none !important;
+  }
+  
+  /* Fix top navigation alignment */
+  .top-nav {
     display: flex !important;
-    justify-content: center !important;
+    justify-content: flex-end !important;
     align-items: center !important;
-    width: 100% !important;
-    max-width: 100% !important;
     gap: 16px !important;
+    font-size: 0.9rem !important;
+    white-space: nowrap !important;
   }
   
-  .main-footer a {
-    text-align: center !important;
-    white-space: nowrap !important;
-    padding: 4px 8px !important;
+  .top-nav a {
+    padding: 8px 12px !important;
     font-size: 0.9rem !important;
-    color: black !important;
-    text-decoration: none !important;
+    text-align: center !important;
   }
   
   /* Ensure footer container is visible */
