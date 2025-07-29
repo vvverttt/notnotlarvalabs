@@ -1709,3 +1709,70 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     align-self: flex-start !important;
   }
 }
+
+/* Project hero sections - iPhone fixes */
+@media (max-width: 768px) {
+  .project-hero {
+    min-height: 400px !important;
+    display: flex !important;
+    align-items: center !important;
+    position: relative !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  .project-hero-content {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 40px 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+  
+  .project-hero-content.left {
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  
+  .project-hero-content.right {
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  
+  .project-hero-content h2 {
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 16px !important;
+    color: white !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+  }
+  
+  .project-hero-content p {
+    font-size: 1.1rem !important;
+    margin-bottom: 24px !important;
+    color: white !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+  }
+  
+  .project-hero-content button {
+    background: transparent !important;
+    color: white !important;
+    border: 2px solid white !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    display: inline-block !important;
+    transition: all 0.3s ease !important;
+    margin: 0 auto !important;
+  }
+}
