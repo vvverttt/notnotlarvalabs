@@ -1361,6 +1361,11 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     display: none !important;
   }
   
+  /* Hide Twitter bird in footer on iPhone */
+  .main-footer .twitter {
+    display: none !important;
+  }
+  
   /* Fix top navigation alignment */
   .top-nav {
     display: flex !important;
