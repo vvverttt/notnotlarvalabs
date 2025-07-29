@@ -1399,7 +1399,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     width: 100% !important;
     max-width: 100% !important;
     gap: 16px !important;
-    margin-left: -10px !important; /* Shift slightly left to center better */
+    margin-left: -20px !important; /* Move further left */
   }
   
   .main-footer a {
