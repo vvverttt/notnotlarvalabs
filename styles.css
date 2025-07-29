@@ -71,6 +71,7 @@ header {
 nav.top-nav, .main-footer nav {
   display: flex;
   align-items: center;
+  margin-left: -10px; /* Shift slightly left to center better */
 }
 
 nav.top-nav a, .main-footer nav a {
