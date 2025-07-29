@@ -1496,6 +1496,13 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     align-self: flex-start !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    background: white !important;
+    color: black !important;
+    border: 2px solid black !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
   }
   
   /* Fix DystoLabz header alignment on iPhone */
